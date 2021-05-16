@@ -1,0 +1,37 @@
+<div class="container" *ngIf="allInfo">
+    <div class="header">{{doseType}}</div>
+    <div class="body">
+        <div class="row">
+            <div class="row-header">Start Date</div>
+            <div class="row-value">{{allInfo.doseStartDate | dateFormatter}}</div>
+        </div>
+        <div class="row">
+            <div class="row-header">Total Doses</div>
+            <div class="row-value">{{allInfo.totalDoses | numberFormatter}}</div>
+        </div>
+        <div class="row">
+            <div class="row-header">Total Days</div>
+            <div class="row-value">{{allInfo.totalDays}}</div>
+        </div>
+        <div class="row">
+            <div class="row-header">Doses/day</div>
+            <div class="row-value">{{allInfo.dosesPerDay | numberFormatter}}</div>
+        </div>
+        <div class="row">
+            <div class="row-header">India Population</div>
+            <div class="row-value">{{allInfo.indiaPopulation | numberFormatter}}</div>
+        </div>
+        <div class="row">
+            <div class="row-header">Doses Required</div>
+            <div class="row-value">{{allInfo.dosesRequired | numberFormatter}}</div>
+        </div>
+        <div class="row">
+            <div class="row-header">Pending Doses</div>
+            <div class="row-value">{{allInfo.pendingDoses | numberFormatter}}</div>
+        </div>
+        <div class="row highlight">
+            <div class="row-header">Complete Vaccination</div>
+            <div class="row-value">{{allInfo.doseCompletionDate | dateFormatter}}</div>
+        </div>
+    </div>
+</div>

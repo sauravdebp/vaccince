@@ -1,0 +1,9 @@
+<div class="container" *ngIf="allDoseTypeInfo">
+    <app-vaccination-completion [doseType]="combined" [asOfDate]="asOfDate" [allInfo]="allDoseTypeInfo[combined]"></app-vaccination-completion>
+    <app-vaccination-completion [doseType]="dose1" [asOfDate]="asOfDate" [allInfo]="allDoseTypeInfo[dose1]"></app-vaccination-completion>
+    <app-vaccination-completion [doseType]="dose2" [asOfDate]="asOfDate" [allInfo]="allDoseTypeInfo[dose2]"></app-vaccination-completion>
+</div>
+<div>
+    <app-charting [dates]="dates" [allDatesDosesTypeInfo]="allDatesDosesTypeInfo"></app-charting>
+</div>
+<router-outlet></router-outlet>

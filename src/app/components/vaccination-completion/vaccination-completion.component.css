@@ -1,0 +1,28 @@
+.container {
+    padding: 5px;
+}
+
+.header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.body {}
+
+.row {
+    display: grid;
+    grid-template-columns: 100% 100%;
+    padding: 5px 0px;
+}
+
+.row-header {}
+
+.row-value {}
+
+.highlight {
+    color: green;
+}
+
+.highlight .row-value {
+    font-weight: bold;
+}

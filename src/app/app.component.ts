@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
   }
 
   private getDateRange() {
-    const interval = 30;
+    const interval = 7;
     const dates = [new Date(this.asOfDate_range[0])];
     let lastIndex = dates.length - 1;
     while (dates[lastIndex] <= this.asOfDate_range[1]) {
